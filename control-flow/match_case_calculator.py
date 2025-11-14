@@ -1,0 +1,19 @@
+num1 = int(input("Enter the first number:  "))
+num2 = int(input("Enter the second number: "))
+operation = input("Choose an operation (+, -, *, /): ")
+
+match operation:
+    case '+':
+        result = num1 + num2
+    case '-':
+        result = num1 - num2
+    case '*':
+        result = num1 * num2
+    case '/':
+          
+        result = num1 / num2
+    case _:
+        result = "Invalid operation selected."
+    
+print(f"The result is: {result}")
+        
