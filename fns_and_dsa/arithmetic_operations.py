@@ -26,7 +26,8 @@ def perform_operation(num1, num2, operation):
     else:
         raise ValueError("Invalid operation. Supported operations are: add, subtract, multiply, divide.")
     
-    from arithmetic_operations import perform_operation
+
+from arithmetic_operations import perform_operation
 
 def main():
     print("Arithmetic Operations")
