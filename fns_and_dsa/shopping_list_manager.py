@@ -37,6 +37,7 @@ def exit_program():
 
 def display_menu():
     print("Shopping List Manager")
+    
     print("1. Add Item")
     print("2. Remove Item")
     print("3. View List")
@@ -48,7 +49,7 @@ def main():
         choice = input("Enter your choice: ")
 
         if choice == '1':
-            item = input("Enter item to add: ")
+            item = input("Enter the item to add: ")
             add_item(item)
 
         elif choice == '2':
