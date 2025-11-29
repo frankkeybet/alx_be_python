@@ -1,6 +1,6 @@
 
 try:
-    from simple_calculator import SimpleCalculator
+    from test_simple_calculator import SimpleCalculator
 except ImportError:
    
     class SimpleCalculator:
