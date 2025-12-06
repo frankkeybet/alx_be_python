@@ -1,16 +1,27 @@
 class Book:
-    def __init__(self,author,title,year):
-        self.author = author
+    def __init__(self, title, author, year):
+        # Constructor: initializes the object
         self.title = title
+        self.author = author
         self.year = year
+
+    def __str__(self):
+        # Human-readable string
+        return f"{self.title} by {self.author}, published in {self.year}"
+
+    def __repr__(self):
+        # Official string representation
+        return f"Book('{self.title}', '{self.author}', {self.year})"
+
     def __del__(self):
-        self.close()
+        # Destructor: called when object is deleted
+        print(f"Deleting {self.title}")
 
 
-from book_class import Book
+# --------- Testing section  ---------
 
 def main():
-    # Creating an instance of Book
+   # Creating an instance of Book
     my_book = Book("1984", "George Orwell", 1949)
 
     # Demonstrating the __str__ method
@@ -22,5 +33,6 @@ def main():
     # Deleting a book instance to trigger __del__
     del my_book
 
+
 if __name__ == "__main__":
-    main()        
+    main()
